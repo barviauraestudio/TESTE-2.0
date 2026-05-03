@@ -33,20 +33,20 @@ export default function ComparisonTable() {
           <div className="ct-row">
             <div className="ct-cell feature-name">Posts / mês</div>
             <div className="ct-cell center">
-              <span className="ct-value ct-serif">6<span className="ct-unit"> posts</span></span>
+              <span className="ct-value">6<span className="ct-unit"> posts</span></span>
             </div>
             <div className="ct-cell center">
-              <span className="ct-value ct-serif">8<span className="ct-unit"> posts</span></span>
+              <span className="ct-value">8<span className="ct-unit"> posts</span></span>
             </div>
           </div>
 
           <div className="ct-row">
             <div className="ct-cell feature-name">Vídeos / mês</div>
             <div className="ct-cell center">
-              <span className="ct-value ct-serif">2<span className="ct-unit"> vídeos</span></span>
+              <span className="ct-value">2<span className="ct-unit"> vídeos</span></span>
             </div>
             <div className="ct-cell center">
-              <span className="ct-value ct-serif">4<span className="ct-unit"> vídeos</span></span>
+              <span className="ct-value">4<span className="ct-unit"> vídeos</span></span>
             </div>
           </div>
 
@@ -84,10 +84,10 @@ export default function ComparisonTable() {
         </Reveal>
 
         <style>{`
-          .ct-serif {
-            font-family: 'Cormorant Garamond', Georgia, serif !important;
-            font-weight: 300;
-            font-size: clamp(20px, 2.8vw, 28px) !important;
+          .ct-value {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 400;
+            font-size: clamp(18px, 2.4vw, 24px);
             letter-spacing: 0.02em;
           }
           .ct-unit {
@@ -108,30 +108,12 @@ export default function ComparisonTable() {
             font-size: 14px;
             color: var(--white);
           }
-          .ct-branding-sub {
-            display: block;
-            font-size: 10px;
-            letter-spacing: 0.1em;
-            color: rgba(201,169,110,0.4);
-            text-transform: uppercase;
-            margin-top: 3px;
-            font-family: 'Outfit', sans-serif;
-            white-space: nowrap;
-          }
           .ct-branding-price {
-            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-family: 'Outfit', sans-serif;
             font-size: clamp(16px, 2.2vw, 22px);
             color: #C9A96E;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.2;
-            white-space: nowrap;
-          }
-          .ct-branding-label {
-            font-size: 10px;
-            letter-spacing: 0.1em;
-            color: rgba(184,175,166,0.38);
-            text-transform: uppercase;
-            font-family: 'Outfit', sans-serif;
             white-space: nowrap;
           }
 
@@ -147,20 +129,18 @@ export default function ComparisonTable() {
           /* Price row */
           .ct-price-row { background: rgba(10,3,5,0.3); }
           .ct-price-highlight {
-            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-family: 'Outfit', sans-serif;
             font-size: clamp(18px, 2.5vw, 26px);
-            font-weight: 300;
+            font-weight: 400;
             letter-spacing: 0.02em;
             white-space: nowrap;
           }
           .eter-price { color: #C9A96E; }
           .aura-price { color: #E8A0A0; }
 
-          /* Mobile — garante que nada cavalga */
+          /* Mobile */
           @media (max-width: 480px) {
             .ct-branding-price { font-size: 15px; }
-            .ct-branding-sub { font-size: 9px; letter-spacing: 0.06em; }
-            .ct-branding-label { font-size: 9px; }
           }
         `}</style>
       </CenterWrapper>
